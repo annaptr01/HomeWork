@@ -66,11 +66,10 @@ else
 
 Console.WriteLine ("Input your number: ");
 int num_N = Convert.ToInt32(Console.ReadLine());
-int current_i = num_N % 2;
+int current_i = 2;
 
 while(current_i <= num_N)
 {
     Console.Write(current_i + " ");
-    current_i ++;  //curent_i += 1; curent_i = current_i + 1;
-
+    current_i += 2;
 }
