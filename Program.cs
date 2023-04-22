@@ -22,9 +22,10 @@ else
 //Напишите программу, которая принимает на вход три числа
 //и выдает максимальное из этих чисел.
 
-//запросить 3 числа
-//ввести перемунную max
-//сделать цикл
+//запросить 3 числа +
+//ввести перемунную max +
+//проверить на макимальность 
+//сделать цикл 
 /*
 Console.WriteLine ("Input your 1st number: ");
 int num_1 = Convert.ToInt32(Console.ReadLine());
@@ -32,19 +33,31 @@ Console.WriteLine ("Input your 2nd number: ");
 int num_2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine ("Input your 3rd number: ");
 int num_3 = Convert.ToInt32(Console.ReadLine());
-int max = 0;
+int max_1 = num_1;
 
-while(max )
+if(max_1 > num_2 && max_1 > num_3)
 {
-    Console.WriteLine("Your max number is: "+ );
+    Console.WriteLine("Your max number is: " + num_1 );
 }
-
+else
+{
+    int max_2 = num_2;
+    if(max_2 > num_1 && max_2 > num_3)
+    {
+        Console.Write("Your max number is: " + num_2);
+    }
+    else
+    {
+        Console.Write("Your max number is: " + num_3);
+    }
+}
+*/
 
 
 //Задача 6.
 //Напишите программу, которая на вход принимает число и выдает, 
 //является ли число четным (делится ли оно на 2 без остатка)
-
+/*
 Console.WriteLine ("Input your number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 //int positiv_num - num (if num > 0) or num * (-1)
@@ -63,7 +76,7 @@ else
 //Задача 8.
 //Напишите программу, которая на вход принимает число(N), а на выходе
 //показывает все четные числа от 1 до N.
-
+/*
 Console.WriteLine ("Input your number: ");
 int num_N = Convert.ToInt32(Console.ReadLine());
 int current_i = 2;
@@ -73,3 +86,4 @@ while(current_i <= num_N)
     Console.Write(current_i + " ");
     current_i += 2;
 }
+*/
