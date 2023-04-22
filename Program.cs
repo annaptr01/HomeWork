@@ -39,8 +39,6 @@ while(max )
     Console.WriteLine("Your max number is: "+ );
 }
 
-*/
-
 
 
 //Задача 6.
@@ -49,21 +47,30 @@ while(max )
 
 Console.WriteLine ("Input your number: ");
 int num = Convert.ToInt32(Console.ReadLine());
+//int positiv_num - num (if num > 0) or num * (-1)
 
-if (num % 2)
+if (num % 2 != 0)
 {
-     Console.WriteLine("Your number " + num + "is even-numbered");
+     Console.WriteLine("Your number: " + num + " is not even-numbered");
 }
 else
 {
-    Console.WriteLine("Your number " + num + "is not even-numbered");
+    Console.WriteLine("Your number: " + num + " is even-numbered");
 }
-
+*/
 
 
 //Задача 8.
 //Напишите программу, которая на вход принимает число(N), а на выходе
 //показывает все четные числа от 1 до N.
 
+Console.WriteLine ("Input your number: ");
+int num_N = Convert.ToInt32(Console.ReadLine());
+int current_i = num_N % 2;
 
+while(current_i <= num_N)
+{
+    Console.Write(current_i + " ");
+    current_i ++;  //curent_i += 1; curent_i = current_i + 1;
 
+}
